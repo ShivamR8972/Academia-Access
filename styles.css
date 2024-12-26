@@ -47,7 +47,7 @@ body {
 
 /* Add a dynamic height variable for the navbar */
 :root {
-  --navbar-height: 70px; /* Adjust this if navbar height changes */
+  --navbar-height: 224px; /* Adjust this if navbar height changes */
 }
 
 
