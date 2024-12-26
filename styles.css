@@ -13,7 +13,7 @@ body {
 }
 
 /* Navigation Bar (Fixed) */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,9 +25,32 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensures navbar stays on top */
+  z-index: 1000;
   flex-wrap: warp;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
+
+/* Add a dynamic height variable for the navbar */
+:root {
+  --navbar-height: 70px; /* Adjust this if navbar height changes */
+}
+
+
 
 .navbar .branding h1 {
   font-family: 'Georgia', serif;
