@@ -35,7 +35,7 @@ body {
   align-items: center;
   background: linear-gradient(90deg, #4f46e5, #3b82f6);
   color: white;
-  padding: 15px 20px;
+  padding: 15px 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -359,9 +359,18 @@ a {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack navbar content vertically */
+    flex-direction: column; /* Stack navbar items vertically */
+    height: auto; /* Allow dynamic height */
     text-align: center;
   }
+
+  body {
+    padding-top: calc(var(--navbar-height, 100px)); /* Increase padding for taller navbar */
+  }
+  /* .navbar {
+    flex-direction: column;
+    text-align: center;
+  } */
 
   .nav-links {
     flex-direction: column; /* Stack nav links vertically */
