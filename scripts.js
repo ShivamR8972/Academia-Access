@@ -1,6 +1,6 @@
 // JavaScript to toggle subjects visibility
 document.addEventListener('DOMContentLoaded', () => {
-  const yearCards = document.querySelectorAll('.note-card');
+  const yearCards = document.querySelectorAll('.year-card');
   const subjectLists = document.querySelectorAll('.subjects-list');
 
   yearCards.forEach(card => {
