@@ -331,6 +331,10 @@ h2, h3, h4 {
 .chapter-list {
   list-style-type: none;
   padding: 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .chapter-list li {
